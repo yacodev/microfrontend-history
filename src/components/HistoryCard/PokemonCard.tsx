@@ -1,10 +1,6 @@
-import { PokemonDetails } from '../interface';
+import { HistoryCardProps } from './interface';
 
-interface PokemonCardProps {
-  pokemon: PokemonDetails;
-}
-
-export const PokemonCard = ({ pokemon }: PokemonCardProps) => {
+export const HistoryCard = ({ pokemon }: HistoryCardProps) => {
   return (
     <div className='bg-white dark:bg-gray-800 rounded-lg shadow-lg dark:shadow-gray-700/50 overflow-hidden h-full flex flex-row transform transition-all duration-300 hover:scale-105 hover:shadow-xl dark:hover:shadow-gray-600/50'>
       <div className='bg-gray-100 dark:bg-gray-700 p-4 text-center'>
@@ -45,4 +41,4 @@ export const PokemonCard = ({ pokemon }: PokemonCardProps) => {
   );
 };
 
-export default PokemonCard;
+export default HistoryCard;

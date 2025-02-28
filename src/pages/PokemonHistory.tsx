@@ -1,5 +1,5 @@
 import usePokemonStore from 'host/pokemonStore';
-import { PokemonCard } from '../components/PokemonCard';
+import HistoryCard from '../components/HistoryCard';
 import { PokemonDetails } from '../interface';
 import { FaArrowLeft } from 'react-icons/fa';
 
@@ -48,7 +48,7 @@ export const PokemonHistory = () => {
                     key={`${pokemon.id}-${index}`}
                     className='transform transition-all duration-300 hover:-translate-y-1 mb-6'
                   >
-                    <PokemonCard pokemon={pokemon} />
+                    <HistoryCard pokemon={pokemon} />
                   </div>
                 )
               )}

@@ -10,7 +10,7 @@ export default defineConfig({
       filename: 'remoteEntry.js',
       exposes: {
         './PokemonHistory': './src/pages/PokemonHistory.tsx',
-        './PokemonCard': './src/components/PokemonCard.tsx',
+        './HistoryCard': './src/components/HistoryCard/index.ts',
       },
       remotes: {
         host: 'http://localhost:3000/assets/remoteEntry.js',
