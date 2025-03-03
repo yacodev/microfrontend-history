@@ -6,7 +6,8 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const HOST_URL = process.env.VITE_HOST_URL ?? 'http://localhost:3000';
+const HOST_URL =
+  process.env.VITE_HOST_URL ?? 'https://challenge-apuesta-total.vercel.app';
 
 export default defineConfig({
   plugins: [
@@ -34,6 +35,9 @@ export default defineConfig({
     cors: {
       origin: '*',
       methods: ['GET', 'OPTIONS'],
+    },
+    headers: {
+      'Access-Control-Allow-Origin': '*',
     },
   },
 });
