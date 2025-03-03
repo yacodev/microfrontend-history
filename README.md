@@ -14,6 +14,8 @@ Herramientas que se utilizaron:
 
 1. Este microfrontend tiene por objetivo mostrar el historial de las busqueda de pokemones realizadas que fue almacenado en store mediante zustand 
 
+https://microfrontend-history.vercel.app/
+
 ## Estructura del repositorio
 
 This repository has the following  organization:
